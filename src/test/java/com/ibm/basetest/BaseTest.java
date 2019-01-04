@@ -20,6 +20,8 @@ public class BaseTest {
 	public void LoginTest()
 	{
 		System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
+		System.setProperty("webdriver.chrome.driver", "./Drivers/chromedriver.exe");
+		//System.setProperty("webdriver.gecko.driver", "./Drivers/geckodriver.exe");
 		WebDriver driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(30,TimeUnit.SECONDS);
